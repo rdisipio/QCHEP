@@ -31,4 +31,4 @@ python -c 'import cirq; print(cirq.google.Foxtail)'
 (1, 0)───(1, 1)───(1, 2)───(1, 3)───(1, 4)───(1, 5)───(1, 6)───(1, 7)───(1, 8)───(1, 9)───(1, 10)
 ```
 
-A bit more advanced example is found in ```hello_qbit.py``` :
+A bit more advanced example is found in ```hello_qbit.py```. More examples: https://github.com/quantumlib/Cirq/tree/master/examples
