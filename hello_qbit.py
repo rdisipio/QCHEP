@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import cirq
 
 # Pick a qubit.
@@ -12,7 +14,7 @@ print("Circuit:")
 print(circuit)
 
 # Simulate the circuit several times.
-simulator = cirq.Simulator()
+simulator = cirq.google.XmonSimulator()
 result = simulator.run(circuit, repetitions=20)
 print("Results:")
 print(result)
