@@ -6,8 +6,8 @@ Install and Setup
 Create virtual environment based on python3
 ```
 module load python/3.7.0
-virtualenv qc
-source qc/bin/activate
+virtualenv env-qc
+source env-qc/bin/activate
 ```
 
 Install Cirq from https://github.com/quantumlib/Cirq
@@ -30,7 +30,7 @@ python -c 'import cirq; print(cirq.google.Foxtail)'
 (1, 0)───(1, 1)───(1, 2)───(1, 3)───(1, 4)───(1, 5)───(1, 6)───(1, 7)───(1, 8)───(1, 9)───(1, 10)
 ```
 
-A bit more advanced example:
+A bit more advanced example is found in ```hello_qbit.py``` :
 
 ```
 import cirq
