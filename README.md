@@ -13,8 +13,9 @@ source env-qc/bin/activate
 Install Cirq from https://github.com/quantumlib/Cirq
 
 ```
-pip install --upgrade pip
-pip install cirq
+git clone https://github.com/quantumlib/Cirq.git
+cd Cirq
+python setup.py install
 ```
 
 Lots of dependencies: numpy, scipy, matplotlib, etc..
