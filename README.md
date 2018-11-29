@@ -1,7 +1,4 @@
-# QCHEP
-
-Quantum Computing HEP applications
-==================================
+# Quantum Computing HEP applications
 
 Install and Setup
 =================
@@ -10,12 +7,25 @@ Create virtual environment based on python3
 ```
 module load python/3.7.0
 virtualenv qc
+source qc/bin/activate
 ```
 
-Install Cirq
-https://github.com/quantumlib/Cirq
+Install Cirq from https://github.com/quantumlib/Cirq
 
 ```
 pip install --upgrade pip
 pip install cirq
+```
+
+Lots of dependencies: numpy, scipy, matplotlib, etc..
+
+Does it work?
+
+```
+python -c 'import cirq; print(cirq.google.Foxtail)'
+
+(0, 0)───(0, 1)───(0, 2)───(0, 3)───(0, 4)───(0, 5)───(0, 6)───(0, 7)───(0, 8)───(0, 9)───(0, 10)
+│        │        │        │        │        │        │        │        │        │        │
+│        │        │        │        │        │        │        │        │        │        │
+(1, 0)───(1, 1)───(1, 2)───(1, 3)───(1, 4)───(1, 5)───(1, 6)───(1, 7)───(1, 8)───(1, 9)───(1, 10)
 ```
